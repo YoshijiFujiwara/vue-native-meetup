@@ -1,18 +1,18 @@
 import Vuex from 'vuex';
 import Vue from 'vue-native-core';
 import axios from 'axios';
-import {Platform} from 'react-native';
+
+import meetups from './modules/meetups';
 
 Vue.use(Vuex);
 
-const BASE_URL = Platform.OS === 'ios' ? 'http://localhost:3001/api/v1'
-                                          : 'http://10.0.2.2:3001/api/v1';
-
 export default new Vuex.Store({
+  modules: {
+    meetups
+  },
   // ステートとして保存したいデータ
   state: {
-    todos: [],
-    meetups: [],
+    todos: []
   },
   // store中のstateには、ゲッターを通して取得できる
   getters: {
@@ -29,14 +29,6 @@ export default new Vuex.Store({
           commit('setTodos', todos);
           return state.todos;
         })
-    },
-    fetchMeetups({ commit, state }) {
-      axios.get(`${BASE_URL}/meetups`)
-        .then(res => {
-          const meetups = res.data;
-          commit('setMeetups', meetups);
-          return state.meetups;
-        })
     }
   },
   mutations: {
@@ -44,9 +36,5 @@ export default new Vuex.Store({
       // vuex-4.stateのtodosに反映する
       Vue.set(state, 'todos', todos)
     },
-    setMeetups(state, meetups) {
-      console.log(meetups.length + 'ほげ')
-      Vue.set(state, 'meetups', meetups);
-    }
   }
 })

@@ -26,14 +26,13 @@
         return this.$store.state.todos
       },
       meetups() {
-        console.log(this.$store.state.meetups)
-        return this.$store.state.meetups
+        return this.$store.state.meetups.items
       }
     },
     created() {
       // vuex-1.vuexのfetchTodosアクションを実行
       this.$store.dispatch('fetchTodos')
-      this.$store.dispatch('fetchMeetups')
+      this.$store.dispatch('meetups/fetchMeetups') // namespace: true
     },
     methods: {
       goToScreen1() {
