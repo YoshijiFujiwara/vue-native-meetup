@@ -19,15 +19,18 @@
     },
     data() {
       return {
-        title: 'ホームスクリーン',
-        todos: []
+        title: 'ホームスクリーン'
+      }
+    },
+    computed: {
+      // vuex-5. ミューテーションした後のデータが反映されている
+      todos() {
+        return this.$store.state.todos
       }
     },
     created() {
-      axios.get('https://jsonplaceholder.typicode.com/todos')
-        .then(res => {
-          this.todos = res.data;
-        })
+      // vuex-1.vuexのfetchTodosアクションを実行
+      this.$store.dispatch('fetchTodos')
     },
     methods: {
       goToScreen1() {
