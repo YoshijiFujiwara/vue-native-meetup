@@ -1,40 +1,36 @@
 <template>
   <view class="container">
-    <HomeScreen v-if="activeScreen === 'homeScreen'"
-                :testingData="testingData"
-                :navigate="navigate" />
-    <Screen1 v-if="activeScreen === 'screen1'"
-                :navigate="navigate" />
+    <AppNavigation />
   </view>
 </template>
 
 <script>
-  import HomeScreen from '@/src/screens/HomeScreen';
-  import Screen1 from '@/src/screens/Screen1';
+  import HomeScreen from '@/screens/HomeScreen';
+  import Screen1 from '@/screens/Screen1';
+  import Screen2 from '@/screens/Screen2';
+
+  import { createStackNavigator, createAppContainer } from 'react-navigation';
+
+  const HomeStack = createStackNavigator(
+    {
+      Home: HomeScreen,
+      Screen1,
+      Screen2
+    }
+  );
+
+  const AppNavigation = createAppContainer(HomeStack)
 
   export default {
     components: {
-      HomeScreen, Screen1
-    },
-    data() {
-      return {
-        activeScreen: 'homeScreen',
-        testingData: 'value from app component',
-      }
-    },
-    methods: {
-      navigate(screen) {
-        this.activeScreen = screen;
-      }
+      HomeScreen, AppNavigation
     }
   }
 </script>
 
 <style>
   .container {
-    background-color: white;
-    align-items: center;
-    justify-content: center;
+    background-color: lightblue;
     flex: 1;
   }
   .text-color-primary {

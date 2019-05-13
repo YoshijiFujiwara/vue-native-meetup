@@ -8,7 +8,7 @@
   export default {
     data() {
       return {
-        title: 'スクリーン1！'
+        title: 'スクリーン2！'
       }
     }
   }
