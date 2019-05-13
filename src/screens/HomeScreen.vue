@@ -2,6 +2,7 @@
   <view class="container">
     <text class="text-color-primary">{{title}}</text>
     <hello />
+    <button :title="'スクリーン１へ'" :on-press="goToScreen1" />
   </view>
 </template>
 
@@ -12,9 +13,19 @@
     components: {
       Hello
     },
+    props: {
+      navigation: {
+        type: Object
+      }
+    },
     data() {
       return {
         title: 'ホームスクリーン'
+      }
+    },
+    methods: {
+      goToScreen1() {
+        this.navigation.navigate('ScreenOne')
       }
     }
   }
