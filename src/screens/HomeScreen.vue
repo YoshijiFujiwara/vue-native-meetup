@@ -2,7 +2,9 @@
   <view class="container">
     <text class="text-color-primary">{{title}}</text>
     <hello />
-    <button :title="'スクリーン１へ'" :on-press="goToScreen1" />
+    <nb-button :on-press="goToScreen1">
+      <nb-text>クリックして！</nb-text>
+    </nb-button>
   </view>
 </template>
 

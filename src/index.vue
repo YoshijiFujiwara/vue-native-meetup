@@ -1,9 +1,17 @@
 <template>
-  <Navigation />
+  <view class="container">
+    <Navigation />
+  </view>
 </template>
 
 <script>
   import Navigation from './navigation';
+  import Vue from 'vue-native-core';
+  import { VueNativeBase } from 'native-base';
+  import ScreenWithDrawer from '@/components/ScreenWithDrawer';
+
+  Vue.use(VueNativeBase);
+  Vue.component('ScreenWithDrawer', ScreenWithDrawer); // ここで登録しておき、いちいちインポートしなくていい
 
   export default {
     components: {
@@ -12,3 +20,8 @@
   }
 </script>
 
+<style>
+  .container {
+    flex: 1;
+  }
+</style>
