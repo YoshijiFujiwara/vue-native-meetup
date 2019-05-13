@@ -16,6 +16,9 @@
       Home: HomeScreen,
       Screen1,
       Screen2
+    },
+    {
+      initialRouteName: 'Screen1'
     }
   );
 
