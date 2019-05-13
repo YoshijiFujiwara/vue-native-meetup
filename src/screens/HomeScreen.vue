@@ -44,8 +44,9 @@
       goToScreen1() {
         this.navigation.navigate('ScreenOne')
       },
-      goToMeetupDetail() {
-        this.navigation.navigate('Meetup')
+      goToMeetupDetail(meetupId) {
+        // 画面遷移してきたときに、変数を渡せる
+        this.navigation.navigate('Meetup', { meetupId })
       }
     }
   }

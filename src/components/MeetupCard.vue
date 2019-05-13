@@ -27,7 +27,7 @@
         </nb-button>
       </nb-left>
       <nb-right>
-        <nb-button :on-press="navigateToDetail">
+        <nb-button :on-press="navigateHandler">
           <nb-text>ミートアップへ行く</nb-text>
         </nb-button>
       </nb-right>
@@ -58,6 +58,11 @@
         }
       }
     },
+    methods: {
+      navigateHandler() {
+        this.navigateToDetail(this.meetup._id)
+      }
+    }
   }
 </script>
 
