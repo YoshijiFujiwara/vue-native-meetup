@@ -7,12 +7,7 @@
 </template>
 
 <script>
-  import ScreenWithDrawer from '@/components/ScreenWithDrawer';
-
   export default {
-    components: {
-      ScreenWithDrawer
-    },
     props: {
       navigation: {
         type: Object
