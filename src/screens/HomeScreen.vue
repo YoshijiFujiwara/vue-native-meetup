@@ -31,6 +31,7 @@
     },
     methods: {
       goToScreen1() {
+        this.$store.
         this.navigation.navigate('ScreenOne')
       }
     }
