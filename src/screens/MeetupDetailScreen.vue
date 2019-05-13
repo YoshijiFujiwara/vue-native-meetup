@@ -1,7 +1,8 @@
 <template>
   <view>
     <text>ミートアップ詳細画面</text>
-    <text>{{meetupId}}</text>
+    <text>{{meetup.title}}</text>
+    <text>{{meetup.description}}</text>
   </view>
 </template>
 
@@ -12,14 +13,16 @@
         type: Object,
       }
     },
-    data() {
-      return {
-        meetupId: ''
+    computed: {
+      meetup() {
+        return this.$store.state.meetups.item;
       }
     },
     created() {
       // 画面遷移してきたときに、変数を渡す
-      this.meetupId = this.navigation.getParam('meetupId', 'undefined')
+      const meetupId = this.navigation.getParam('meetupId', 'undefined')
+
+      this.$store.dispatch('meetups/fetchMeetupById', meetupId)
     }
   }
 </script>
