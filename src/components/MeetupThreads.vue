@@ -41,6 +41,11 @@
       </view>
     </nb-content>
   </nb-container>
+
+  <nb-container v-else>
+    <AppMessage message="スレッドがまだ作成されていません"
+                msgType="danger" />
+  </nb-container>
 </template>
 
 <script>
