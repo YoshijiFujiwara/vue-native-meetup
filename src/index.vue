@@ -10,6 +10,7 @@
   import { VueNativeBase } from 'native-base';
   import store from './store';
   import ScreenWithDrawer from '@/components/ScreenWithDrawer';
+  import moment from 'moment';
 
   Vue.use(VueNativeBase);
   Vue.component('ScreenWithDrawer', ScreenWithDrawer); // ここで登録しておき、いちいちインポートしなくていい
@@ -20,6 +21,17 @@
 
     return value.toUpperCase()
   })
+
+  Vue.filter('formatDate', function (value, formatType='LL') {
+    if (!value) return '';
+
+    return moment(value).format(formatType)
+  });
+  Vue.filter('fromNow', function (value) {
+    if (!value) return '';
+
+    return moment(value).fromNow()
+  });
 
   export default {
     components: {
