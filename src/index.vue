@@ -15,6 +15,12 @@
   Vue.component('ScreenWithDrawer', ScreenWithDrawer); // ここで登録しておき、いちいちインポートしなくていい
   Vue.prototype.$store = store;
 
+  Vue.filter('upperCase', function(value) {
+    if (!value) return ''
+
+    return value.toUpperCase()
+  })
+
   export default {
     components: {
       Navigation
