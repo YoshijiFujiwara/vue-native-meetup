@@ -2,22 +2,27 @@
   <!-- 読み込まれてから、表示する -->
   <nb-container v-if="isMeetupLoaded">
     <view :style="styles.container">
-      <!-- meetup title -->
       <nb-h1 :style="[styles.headerOne, styles.container]">{{meetup.title}}</nb-h1>
-      <!-- meetup creator avatar  -->
       <nb-thumbnail :source="{uri: meetupCreator.avatar}" />
+      <nb-text :style="styles.label">
+        by {{meetupCreator.name}}
+      </nb-text>
     </view>
-    <!-- apply styles label and padding left -->
-    <!-- meetup creator name -->
-    <nb-text :style="[styles.label, { paddingLeft: 20 }]">
-      by {{meetupCreator.name}}
-    </nb-text>
+
     <nb-content>
       <nb-card>
-        <nb-card-item header bordered>
-          <nb-text>詳細</nb-text>
-        </nb-card-item>
-        <MeetupDetailInfo :meetup="meetup" />
+        <nb-tabs>
+          <nb-tab heading="詳細">
+            <MeetupDetailInfo :meetup="meetup" />
+          </nb-tab>
+          <nb-tab heading="スレ">
+            <text>hoge</text>
+          </nb-tab>
+          <nb-tab heading="参加者">
+            <text>hogehoge</text>
+          </nb-tab>
+        </nb-tabs>
+
       </nb-card>
     </nb-content>
   </nb-container>
