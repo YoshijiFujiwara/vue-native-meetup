@@ -17,17 +17,17 @@ export default {
   },
   actions: {
     fetchMeetups({ commit, state }) {
-      axios.get(`${BASE_URL}/meetups`)
+      return axios.get(`${BASE_URL}/meetups`)
         .then(res => {
           const meetups = res.data;
-          commit('setMeetups', meetups);
+          commit('setItems', {items: meetups, resource: 'meetups'}, {root: true})
           return state.items;
         })
     },
     fetchMeetupById({ commit, state }, meetupId) {
       // 前回の分をリセットする
       commit('setMeetup', {});
-      axios.get(`${BASE_URL}/meetups/${meetupId}`)
+      return axios.get(`${BASE_URL}/meetups/${meetupId}`)
         .then(res => {
           const meetup = res.data;
           commit('setMeetup', meetup);
@@ -36,9 +36,6 @@ export default {
     }
   },
   mutations: {
-    setMeetups(state, meetups) {
-      Vue.set(state, 'items', meetups);
-    },
     setMeetup(state, meetup) {
       Vue.set(state, 'item', meetup);
     },

@@ -1,5 +1,3 @@
-
-
 <template>
   <nb-card>
     <nb-card-item bordered>

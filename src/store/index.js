@@ -3,16 +3,17 @@ import Vue from 'vue-native-core';
 import axios from 'axios';
 
 import meetups from './modules/meetups';
+import threads from './modules/threads';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   modules: {
-    meetups
+    meetups,
+    threads
   },
   // ステートとして保存したいデータ
   state: {
-    todos: []
   },
   // store中のstateには、ゲッターを通して取得できる
   getters: {
@@ -20,21 +21,11 @@ export default new Vuex.Store({
   },
   // コンポーネント中のメソッドのようなもの
   actions: {
-    // vuex-2.homeScreenからのアクションディスパッチに対応
-    fetchTodos({ commit, state }) {
-      axios.get('https://jsonplaceholder.typicode.com/todos')
-        .then(res => {
-          const todos = res.data;
-          // vuex-3.mutationをコミット
-          commit('setTodos', todos);
-          return state.todos;
-        })
-    }
   },
   mutations: {
-    setTodos(state, todos) {
-      // vuex-4.stateのtodosに反映する
-      Vue.set(state, 'todos', todos)
-    },
+    // modules以下のsetItems系はここに統一する
+    setItems(state, {items, resource}) {
+      Vue.set(state[resource], 'items', items)
+    }
   }
 })

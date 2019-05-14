@@ -37,7 +37,6 @@
     },
     created() {
       // vuex-1.vuexのfetchTodosアクションを実行
-      this.$store.dispatch('fetchTodos')
       this.$store.dispatch('meetups/fetchMeetups') // namespace: true
     },
     methods: {
