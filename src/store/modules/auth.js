@@ -1,4 +1,5 @@
 import axios from "axios";
+import axiosInstance from '@/services/axios';
 import Vue from "vue-native-core";
 import {Platform} from "react-native";
 import { AsyncStorage } from 'react-native';
@@ -18,26 +19,38 @@ export default {
   namespaced: true,
 
   state: {
-    user: {},
+    user: null,
     isAuth: false
   },
   actions: {
-    login({commit, state}, userData) {
+    login ({commit, state}, userData) {
       return axios.post(`${BASE_URL}/users/login`, userData)
         .then(res => {
           const user = res.data
-          AsyncStorage.setItem('meetuper-jwt', user.token);
+          AsyncStorage.setItem('meetuper-jwt', user.token)
           commit('setAuthUser', user)
           return state.user
         })
     },
-    async verifyUser() {
+    fetchCurrentUser ({commit, state}) {
+      return axiosInstance.get(`${BASE_URL}/users/me`)
+        .then(res => {
+          const user = res.data
+          AsyncStorage.setItem('meetuper-jwt', user.token)
+          commit('setAuthUser', user)
+          return state.user
+        })
+    },
+    async verifyUser ({dispatch}) {
       const jwt = await AsyncStorage.getItem('meetuper-jwt')
 
       if (jwt && isTokenValid(jwt)) {
-        return Promise.resolve(jwt)
+        const user = await dispatch('fetchCurrentUser')
+
+        return user ? Promise.resolve(jwt)
+          : Promise.reject('Cannot fetch user')
       } else {
-        return Promise.reject('Token is not valid');
+        return Promise.reject('Token is not valid')
       }
     }
   },

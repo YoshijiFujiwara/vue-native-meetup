@@ -5,7 +5,7 @@ const axiosInstance = axios.create({
   timeout: 3000
 });
 
-axiosInstance.interceptors.request.user(async function (config) {
+axiosInstance.interceptors.request.use(async function (config) {
   const token = await AsyncStorage.getItem('meetuper-jwt');
 
   if (token) {

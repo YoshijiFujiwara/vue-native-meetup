@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a11ac7ca-dd04-4cd3-8649-977468dacc34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/axios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/HomeScreen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/HomeScreen.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/meetups.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/meetups.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/LoginScreen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/LoginScreen.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/auth.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/screens/HomeScreen.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="51">
+              <caret line="3" column="87" selection-start-line="3" selection-start-column="87" selection-end-line="3" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -30,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/axios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="119">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -42,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/modules/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="325">
+              <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -60,13 +61,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screens/LoginScreen.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+            <state relative-caret-position="481">
+              <caret line="114" column="8" lean-forward="true" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
               <folding>
-                <element signature="e#1307#1359#0" expanded="true" />
+                <element signature="e#1549#1601#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/modules/meetups.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+            <state relative-caret-position="459">
+              <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -140,6 +141,7 @@
       <find>fetchtodos</find>
       <find>setmeetups</find>
       <find>fetchThreads</find>
+      <find>axiosinstance.inte</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,11 +178,11 @@
         <option value="$PROJECT_DIR$/src/index.vue" />
         <option value="$PROJECT_DIR$/src/screens/RegisterScreen.vue" />
         <option value="$PROJECT_DIR$/src/store/index.js" />
-        <option value="$PROJECT_DIR$/src/screens/LoginScreen.vue" />
-        <option value="$PROJECT_DIR$/src/store/modules/auth.js" />
-        <option value="$PROJECT_DIR$/src/screens/HomeScreen.vue" />
-        <option value="$PROJECT_DIR$/src/services/axios.js" />
         <option value="$PROJECT_DIR$/src/store/modules/meetups.js" />
+        <option value="$PROJECT_DIR$/src/screens/HomeScreen.vue" />
+        <option value="$PROJECT_DIR$/src/store/modules/auth.js" />
+        <option value="$PROJECT_DIR$/src/services/axios.js" />
+        <option value="$PROJECT_DIR$/src/screens/LoginScreen.vue" />
       </list>
     </option>
   </component>
@@ -287,12 +289,12 @@
       <workItem from="1557751418129" duration="7537000" />
       <workItem from="1557812674493" duration="5050000" />
       <workItem from="1557827320182" duration="8915000" />
-      <workItem from="1557964854991" duration="3413000" />
+      <workItem from="1557964854991" duration="4510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52910000" />
+    <option name="totallyTimeSpent" value="54007000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,20 +622,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/LoginScreen.vue">
+    <entry file="file://$PROJECT_DIR$/src/store/modules/meetups.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-          <folding>
-            <element signature="e#1307#1359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/modules/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="459">
+          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -642,27 +634,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/screens/HomeScreen.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="51">
+          <caret line="3" column="87" selection-start-line="3" selection-start-column="87" selection-end-line="3" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/axios.js">
+    <entry file="file://$PROJECT_DIR$/src/store/modules/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        <state relative-caret-position="325">
+          <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/modules/meetups.js">
+    <entry file="file://$PROJECT_DIR$/src/services/axios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="119">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/LoginScreen.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="114" column="8" lean-forward="true" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
+          <folding>
+            <element signature="e#1549#1601#0" expanded="true" />
           </folding>
         </state>
       </provider>
