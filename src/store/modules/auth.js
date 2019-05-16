@@ -48,6 +48,7 @@ export default {
           commit('setAuthUser', user)
           return state.user
         })
+        .catch(() => undefined)
     },
     async verifyUser ({dispatch, commit}) {
       const jwt = await AsyncStorage.getItem('meetuper-jwt')

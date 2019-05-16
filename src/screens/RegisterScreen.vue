@@ -47,6 +47,7 @@
           <nb-input v-model="form.passwordConfirmation"
                     last
                     placeholder="パスワード再入力"
+                    secure-text-entry
                     auto-capitalize="none"
                     :on-blur="() => $v.form.passwordConfirmation.$touch()" />
         </InputWithError>

@@ -60,6 +60,7 @@
     },
     created () {
       this.$store.dispatch('auth/verifyUser')
+        .catch(() => {})
     }
   }
 </script>
