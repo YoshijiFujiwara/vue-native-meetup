@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a11ac7ca-dd04-4cd3-8649-977468dacc34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/screens/MeetupCreateScreen.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/modules/categories.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/MeetupCreateScreen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MeetupCreateScreen.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+            <state relative-caret-position="430">
+              <caret line="82" column="3" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
               <folding>
                 <element signature="e#219#253#0" expanded="true" />
               </folding>
@@ -67,24 +69,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/screens/LoginScreen.vue">
+        <entry file="file://$PROJECT_DIR$/src/store/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="68" column="18" lean-forward="true" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+            <state relative-caret-position="272">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding>
-                <element signature="e#1549#1601#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/index.js">
+        <entry file="file://$PROJECT_DIR$/src/store/modules/categories.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            <state relative-caret-position="306">
+              <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/AppHeader.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="83" column="23" lean-forward="true" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
+            <state relative-caret-position="391">
+              <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -123,8 +125,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screens/MeetupCreateScreen.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="306">
+              <caret line="114" column="41" lean-forward="true" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="41" />
+              <folding>
+                <element signature="e#2015#2067#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,17 +180,18 @@
         <option value="$PROJECT_DIR$/src/components/AppMessage.vue" />
         <option value="$PROJECT_DIR$/src/components/MeetupThreads.vue" />
         <option value="$PROJECT_DIR$/src/components/InputWithError.vue" />
-        <option value="$PROJECT_DIR$/src/store/index.js" />
         <option value="$PROJECT_DIR$/src/store/modules/meetups.js" />
         <option value="$PROJECT_DIR$/src/services/axios.js" />
         <option value="$PROJECT_DIR$/src/screens/LoginScreen.vue" />
         <option value="$PROJECT_DIR$/src/screens/RegisterScreen.vue" />
-        <option value="$PROJECT_DIR$/src/index.vue" />
         <option value="$PROJECT_DIR$/src/screens/MeetupDetailScreen.vue" />
         <option value="$PROJECT_DIR$/src/screens/HomeScreen.vue" />
         <option value="$PROJECT_DIR$/src/store/modules/auth.js" />
-        <option value="$PROJECT_DIR$/src/components/AppHeader.vue" />
         <option value="$PROJECT_DIR$/src/navigation.vue" />
+        <option value="$PROJECT_DIR$/src/index.vue" />
+        <option value="$PROJECT_DIR$/src/store/index.js" />
+        <option value="$PROJECT_DIR$/src/store/modules/categories.js" />
+        <option value="$PROJECT_DIR$/src/components/AppHeader.vue" />
         <option value="$PROJECT_DIR$/src/screens/MeetupCreateScreen.vue" />
       </list>
     </option>
@@ -305,12 +311,12 @@
       <workItem from="1557751418129" duration="7537000" />
       <workItem from="1557812674493" duration="5050000" />
       <workItem from="1557827320182" duration="8915000" />
-      <workItem from="1557964854991" duration="8560000" />
+      <workItem from="1557964854991" duration="9412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58057000" />
+    <option name="totallyTimeSpent" value="58909000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -369,9 +375,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -607,46 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/RegisterScreen.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-          <folding>
-            <element signature="e#2423#2500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding>
-            <element signature="e#219#253#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/MeetupDetailScreen.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="e#834#895#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/screens/HomeScreen.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -667,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AppHeader.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="83" column="23" lean-forward="true" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/navigation.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -681,10 +637,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="82" column="3" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
+          <folding>
+            <element signature="e#219#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/MeetupDetailScreen.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#834#895#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/RegisterScreen.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
+          <folding>
+            <element signature="e#2423#2500#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/modules/categories.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AppHeader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/screens/MeetupCreateScreen.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        <state relative-caret-position="306">
+          <caret line="114" column="41" lean-forward="true" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="41" />
+          <folding>
+            <element signature="e#2015#2067#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

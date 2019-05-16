@@ -43,7 +43,7 @@
         return this.$store.getters['auth/isAuth']
       },
       btnOptions () {
-        if (this.isAuth) {
+        if (!this.isAuth) {
           return ['Create Meetup', 'Logout', 'Cancel']
         } else {
           return ['Login', 'Register', 'Cancel']

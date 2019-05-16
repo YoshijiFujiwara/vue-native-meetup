@@ -5,6 +5,7 @@ import axios from 'axios';
 import meetups from './modules/meetups';
 import threads from './modules/threads';
 import auth from './modules/auth';
+import categories from './modules/categories'
 
 Vue.use(Vuex);
 
@@ -12,7 +13,8 @@ export default new Vuex.Store({
   modules: {
     meetups,
     threads,
-    auth
+    auth,
+    categories
   },
   // ステートとして保存したいデータ
   state: {
