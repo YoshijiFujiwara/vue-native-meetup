@@ -56,12 +56,9 @@
         }
       }
     },
-    async created() {
-      const token = await AsyncStorage.getItem('meetuper-jwt');
-
-      if (token) {
-        this.navigation.navigate('Home')
-      }
+    created() {
+      this.$store.dispatch('auth/verifyUser')
+        .then(() => this.navigation.navigate('Home'))
     },
     validations: {
       form: {
