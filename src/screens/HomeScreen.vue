@@ -38,7 +38,6 @@
     created() {
       // vuex-1.vuexのfetchTodosアクションを実行
       this.$store.dispatch('meetups/fetchMeetups') // namespace: true
-      this.$store.dispatch('meetups/fetchSecret')
     },
     methods: {
       goToScreen1() {

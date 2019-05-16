@@ -18,15 +18,7 @@ export default {
   },
   actions: {
     async fetchSecret () {
-      const token = await AsyncStorage.getItem('meetuper-jwt')
-
-      const config = {
-        headers: {
-          'Authorization': 'Bearer ' + token
-        }
-      }
-
-      return axios.get(`${BASE_URL}/meetups/secret`, config)
+      return axiosInstance.get(`${BASE_URL}/meetups/secret`)
         .then(res => {
           const data = res.data
           alert(JSON.stringify(data))
