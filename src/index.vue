@@ -19,6 +19,7 @@
   import ScreenWithDrawer from '@/components/ScreenWithDrawer';
   import InputWithError from '@/components/InputWithError';
   import AppMessage from '@/components/AppMessage';
+  import AppHeader from '@/components/AppHeader';
 
   // Registering Plugins
   Vue.use(VueNativeBase);
@@ -27,6 +28,7 @@
   // Registering Component
   Vue.component('ScreenWithDrawer', ScreenWithDrawer); // ここで登録しておき、いちいちインポートしなくていい
   Vue.component('AppMessage', AppMessage)
+  Vue.component('AppHeader', AppHeader)
   Vue.component('InputWithError', InputWithError)
 
   // Provide Store to global context of vue
