@@ -28,10 +28,6 @@
       }
     },
     computed: {
-      // vuex-5. ミューテーションした後のデータが反映されている
-      todos() {
-        return this.$store.state.todos
-      },
       meetups() {
         return this.$store.state.meetups.items
       },
