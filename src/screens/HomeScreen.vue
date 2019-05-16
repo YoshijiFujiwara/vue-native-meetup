@@ -2,6 +2,9 @@
   <scroll-view>
     <nb-text class="header-1">Featured Meetups</nb-text>
     <nb-text v-if="user" :style="{paddingLeft: 20}">Welcome {{user.username}}</nb-text>
+    <nb-button transparent :on-press="logout">
+      <nb-text>Logout</nb-text>
+    </nb-button>
     <MeetupCard v-for="meetup in meetups"
                   :meetup="meetup"
                   :navigateToDetail="goToMeetupDetail"
@@ -11,6 +14,7 @@
 
 <script>
   import MeetupCard from '@/components/MeetupCard';
+  import { AsyncStorage } from 'react-native'
 
   export default {
     components: {
@@ -46,6 +50,9 @@
       goToMeetupDetail(meetupId) {
         // 画面遷移してきたときに、変数を渡せる
         this.navigation.navigate('Meetup', { meetupId })
+      },
+      logout () {
+        AsyncStorage.removeItem('meetuper-jwt')
       }
     }
   }
