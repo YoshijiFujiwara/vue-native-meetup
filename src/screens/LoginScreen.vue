@@ -1,8 +1,5 @@
 <template>
-  <nb-container class="spinner-container" v-if="isCheckingUser">
-    <nb-spinner color="blue" />
-  </nb-container>
-  <nb-container v-else :style="{backgroundColor: '#fff'}">
+  <nb-container :style="{backgroundColor: '#fff'}">
     <nb-header>
       <nb-body>
         <nb-title>
@@ -55,7 +52,6 @@
     },
     data() {
       return {
-        isCheckingUser: false,
         form: {
           email: '',
           password: ''
@@ -63,10 +59,9 @@
       }
     },
     async created() {
-      this.isCheckingUser = true
-      this.$store.dispatch('auth/verifyUser')
-        .then(() => this.navigation.navigate('Home'))
-        .catch(() => this.isCheckingUser = false)
+      const isAuth = this.$store.getters['auth/isAuth']
+
+      if (isAuth) { this.navigation.navigate('Home') }
     },
     validations: {
       form: {
@@ -97,6 +92,17 @@
             })
         }
       },
+      checkForMessage () {
+        const message = this.navigation.getParam('message')
+        if (message) {
+          Toast.show({
+            text: message,
+            buttonText: "Okay",
+            type: "success",
+            duration: 3000
+          })
+        }
+      },
       goToRegister() {
         this.navigation.navigate('Register')
       },
@@ -107,9 +113,3 @@
   }
 </script>
 
-<style>
-  .spinner-container {
-    display: flex;
-    justify-content: center;
-  }
-</style>
